@@ -34,11 +34,6 @@ require('lazy').setup({
     config = function() require('configs.luasnip') end,
   },
   {
-    'AstroNvim/astrotheme',
-    dependencies = {},
-    config = function() require('configs.astrotheme') end,
-  },
-  {
     'freddiehaddad/feline.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons', 'lewis6991/gitsigns.nvim' },
     config = function () require('configs.feline') end,
