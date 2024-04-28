@@ -1,0 +1,5 @@
+[user]
+	email = felixscholz@xenoncloud.net
+	name = Felix Scholz
+[rebase]
+	updateRefs = true
