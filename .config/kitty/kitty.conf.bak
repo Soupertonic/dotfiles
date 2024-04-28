@@ -1,0 +1,19 @@
+font_family      Jetbrains Mono
+bold_font        Jetbrains Mono
+italic_font      Jetbrains Mono
+bold_italic_font Jetbrains Mono
+modify_font cell_width 95%
+modify_font cell_height 14.5px
+font_size 14 
+force_ltr yes 
+resize_in_steps yes 
+cursor_shape block
+cursor_beam_thickness 10
+placement_strategy top-left
+disable_ligatures never
+macos_window_resizable yes
+enable_audio_bell no 
+visual_bell_duration 0.0
+macos_quit_when_last_window_closed yes 
+hide_window_decorations titlebar-only
+confirm_os_window_close -1
