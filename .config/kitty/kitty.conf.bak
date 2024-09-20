@@ -1,0 +1,79 @@
+enabled_layouts tall:bias=50;full_size=1;mirrored=false
+font_family      JetbrainsMono Nerd Font
+bold_font        JetbrainsMono Nerd Font
+italic_font      JetbrainsMono Nerd Font
+bold_italic_font JetbrainsMono Nerd Font
+modify_font cell_width 95%
+modify_font cell_height 12.5px
+font_size 13
+force_ltr yes 
+macos_thicken_font 0
+resize_in_steps no 
+cursor_shape block
+cursor_beam_thickness 10
+placement_strategy center
+disable_ligatures never 
+macos_window_resizable yes
+macos_option_as_alt yes 
+enable_audio_bell no 
+visual_bell_duration 0.0
+macos_quit_when_last_window_closed yes 
+hide_window_decorations titlebar-only
+confirm_os_window_close 0 
+window_padding_width 10 
+
+input_delay 0
+repaint_delay 2
+sync_to_monitor no
+wayland_enable_ime no
+# foreground		 #D1D5DB
+# background               #111827
+# selection_foreground     #D1D5DB
+# selection_background     #374151
+# url_color                #957FB8
+# cursor                   #D1D5DB
+# cursor_text_color        #111827
+# active_tab_foreground    #D1D5DB
+# active_tab_background    #111827
+# inactive_tab_foreground  #817c9c
+# inactive_tab_background  #232136
+
+# black
+# color0   #6B7280
+# color8   #6B7280
+
+# red
+# color1   #FCA5A5
+# color9   #FCA5A5
+
+# green
+# color2   #B1E3AD
+# color10  #B1E3AD
+
+# yellow
+# color3   #FBC19D
+# color11  #FBC19D
+
+# blue
+# color4   #BAE6FD
+# color12  #BAE6FD
+
+# magenta
+# color5   #957FB8
+# color13  #938AA9
+
+e cyan
+# color6   #DDD6FE
+# color14  #DDD6FE
+
+# white
+# color7   #A5F3FC
+# color15  #A5F3FC
+
+
+
+
+# BEGIN_KITTY_THEME
+# Default
+include current-theme.conf
+# END_KITTY_THEME
