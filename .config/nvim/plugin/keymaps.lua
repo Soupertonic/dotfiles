@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>e", ":Exp<cr>")
+vim.keymap.set("n", "<leader>e", ":Oil<cr>")
 vim.keymap.set("n", "<leader>i", ":Inspect<cr>")
 
 vim.keymap.set("n", "<c-h>", "<c-w><c-h>")

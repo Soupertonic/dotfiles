@@ -2,11 +2,22 @@ local telescope = require("telescope")
 local telescope_builtin = require("telescope.builtin")
 
 telescope.setup {
+  defaults = {
+    file_ignore_patterns = {
+     ".git",
+     "node_modules",
+    },
+  },
   extensions = {
     fuzzy = true,
     override_generic_sorter = true,
     override_file_sorter = true,
     case_mode = "ignore_case",
+  },
+  pickers = {
+    find_files = {
+      hidden = true,
+    },
   },
 }
 

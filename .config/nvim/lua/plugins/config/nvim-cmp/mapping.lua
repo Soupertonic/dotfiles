@@ -13,7 +13,7 @@ return {
     behavior = cmp.ConfirmBehavior.Insert,
     select = true,
   }),
-  ['K'] = cmp.mapping(function(fallback)
+  ['s-k'] = cmp.mapping(function(fallback)
     if cmp.visible_docs() then
       cmp.close_docs()
     elseif cmp.visible() then
