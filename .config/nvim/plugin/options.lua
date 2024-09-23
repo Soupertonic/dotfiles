@@ -34,21 +34,9 @@ vim.opt.inccommand = "split"
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
-vim.opt.formatoptions:remove "c"
-vim.opt.formatoptions:remove "r"
 vim.opt.formatoptions:remove "o"
 
 vim.cmd("syntax on")
 vim.cmd("filetype plugin on")
 vim.cmd("colorscheme late-night-works")
 
-if vim.g.neovide then
-  vim.o.linespace = 15
-  --vim.o.guifont = "MesloLGS Nerd Font:h13:w-0.50"
-  --vim.o.guifont = "Liberation Mono:h13.5:w-0.66"
-  vim.o.guifont = "SfMono Nerd Font:h13:w-0.5"
-  vim.g.neovide_cursor_animation_length = 0
-  vim.g.neovide_input_macos_option_key_is_meta = 'only_left'
-  vim.g.neovide_position_animation_length = 0
-  vim.g.neovide_scroll_animation_length = 0
-end

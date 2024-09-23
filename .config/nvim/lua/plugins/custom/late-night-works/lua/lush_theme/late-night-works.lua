@@ -17,6 +17,8 @@ local theme = lush(function(injected_functions)
     Visual         { fg = hsl(199, 73, 73), bg = hsl(199, 71, 10) }, -- Visual mode selection
     ErrorMsg       { fg = hsl(0, 57, 76) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 
+    Directory      { fg = hsl(199, 70, 72) }, -- Directory names (and other special names in listings)
+
     Comment        { fg = hsl(230, 20, 50) }, -- Any comment
     Constant       { fg = hsl(164, 60, 68) }, -- (*) Any constant
     String         { fg = hsl(21, 56, 81) }, --   A string constant: "this is a string"
@@ -34,7 +36,6 @@ local theme = lush(function(injected_functions)
     -- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
     -- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    -- Directory      { }, -- Directory names (and other special names in listings)
     -- DiffAdd        { }, -- Diff mode: Added line |diff.txt|
     -- DiffChange     { }, -- Diff mode: Changed line |diff.txt|
     -- DiffDelete     { }, -- Diff mode: Deleted line |diff.txt|
@@ -572,12 +573,15 @@ local theme = lush(function(injected_functions)
     CmpItemKindSnippet { fg = hsl(250, 29, 8), bg = hsl(230, 80, 60) },
 
     cStructure { fg = hsl(289, 64, 72) },
+    cDefine { fg = hsl(289, 64, 72) },
     cType { fg = hsl(289, 64, 72) },
     cTypedef { fg = hsl(289, 64, 72) },
     cStorageClass { fg = hsl(289, 64, 72) },
     cNumber { fg = hsl(164, 60, 68) },
     cFormat { fg = hsl(0, 57, 76) },
     cSpecial { fg = hsl(0, 88, 76) },
+    cParenError { bg = Normal.bg, fg = Normal.fg }, -- Normal text
+    cErrInParen { bg = Normal.bg, fg = Normal.fg }, -- Normal text
 
     sym"@lsp.type.class.c" { fg = hsl(201, 71, 65) },
     sym"@lsp.type.enum.c" { fg = hsl(201, 71, 65) },
@@ -587,6 +591,17 @@ local theme = lush(function(injected_functions)
     sym"@lsp.type.property.c" { fg = hsl(199, 51, 79)  },
     sym"@lsp.type.variable.c" { fg = hsl(199, 51, 79)  },
     sym"@lsp.type.parameter.c" { fg = hsl(199, 51, 79)  },
+    sym"@lsp.type.operator.c" { fg = hsl(199, 51, 79)  },
+
+    sym"@lsp.type.class.cpp" { fg = hsl(201, 71, 65) },
+    sym"@lsp.type.enum.cpp" { fg = hsl(201, 71, 65) },
+    sym"@lsp.type.function.cpp" { fg = hsl(199, 70, 72) },
+    sym"@lsp.type.macro.cpp" { fg = hsl(244, 45, 73) },
+    sym"@lsp.type.enumMember.cpp" { fg = hsl(244, 69, 85) },
+    sym"@lsp.type.property.cpp" { fg = hsl(199, 51, 79)  },
+    sym"@lsp.type.variable.cpp" { fg = hsl(199, 51, 79)  },
+    sym"@lsp.type.parameter.cpp" { fg = hsl(199, 51, 79)  },
+    sym"@lsp.type.operator.cpp" { fg = hsl(199, 51, 79)  },
 }
 end)
 
