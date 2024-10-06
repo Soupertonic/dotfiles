@@ -1,0 +1,16 @@
+user_pref("browser.download.dir", "/home/soup");
+user_pref("browser.aboutConfig.showWarning", false);
+user_pref("browser.translations.automaticallyPopup", false);
+user_pref("browser.preferences.experimental", false);
+user_pref("browser.preferences.experimental.hidden", true);
+user_pref("browser.preferences.moreFromMozilla", false);
+user_pref("browser.search.region", "EN");
+user_pref("browser.urlbar.shortcuts.bookmarks", false);
+user_pref("browser.urlbar.shortcuts.tabs", false);
+user_pref("browser.urlbar.suggest.bookmark", false);
+user_pref("browser.urlbar.suggest.engines", false);
+user_pref("browser.urlbar.suggest.openpage", false);
+user_pref("browser.urlbar.suggest.topsites", false);
+user_pref("browser.urlbar.suggest.trending", false);
+user_pref("browser.warnOnQuitShortcut", false);
+user_pref("identity.fxaccounts.enabled", false);
